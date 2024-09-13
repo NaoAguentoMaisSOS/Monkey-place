@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos do YouTube com Fundo Arco-íris e Imagens de Banana</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-y: scroll; /* Adiciona a rolagem vertical */
+            font-family: Arial, sans-serif;
+            animation: backgroundColorChange 15s linear infinite; /* Animação de fundo arco-íris */
+            position: relative;
+            text-align: center;
+            min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+        }
+
+        @keyframes backgroundColorChange {
+            0% { background-color: #ff0000; } /* Vermelho */
+            16% { background-color: #ff7f00; } /* Laranja */
+            33% { background-color: #ffff00; } /* Amarelo */
+            50% { background-color: #00ff00; } /* Verde */
+            66% { background-color: #0000ff; } /* Azul */
+            83% { background-color: #4b0082; } /* Índigo */
+            100% { background-color: #9400d3; } /* Violeta */
+        }
+
+        .title {
+            font-size: 3em;
+            color: #fff; /* Cor do texto do título em branco */
+            margin: 20px 0;
+            position: relative; /* Para garantir que o título fique sobre a animação */
+            z-index: 2; /* Garante que o título fique acima do fundo animado */
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 1; /* Garante que os vídeos fiquem acima do fundo animado */
+        }
+
+        .video-container iframe {
+            width: 80vw; /* Ajusta o tamanho dos vídeos conforme a largura da tela */
+            height: 45vw; /* Ajusta a altura dos vídeos para manter a proporção */
+            max-width: 560px; /* Limita a largura máxima para não exceder o tamanho recomendado */
+            max-height: 315px; /* Limita a altura máxima para manter a proporção */
+            border: none;
+        }
+
+        .tags {
+            text-align: center;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1; /* Garante que as tags fiquem acima do fundo animado */
+        }
+
+        .tags span {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 3px 8px;
+            background-color: #333; /* Fundo das tags em cinza escuro */
+            border-radius: 5px;
+            font-size: 14px;
+            color: #fff; /* Cor do texto das tags em branco */
+        }
+
+        .banana-img {
+            position: absolute;
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            animation: moveBanana 15s linear infinite; /* Animação de movimento da imagem */
+            opacity: 0.9; /* Leve transparência para a imagem */
+        }
+
+        @keyframes moveBanana {
+            0% {
+                transform: translate(calc(-100px - 100vw), calc(-100px - 100vh)); /* Começa fora da tela no canto superior esquerdo */
+            }
+            25% {
+                transform: translate(calc(100vw + 100px), -100px); /* Move para o canto superior direito */
+            }
+            50% {
+                transform: translate(calc(100vw + 100px), calc(100vh + 100px)); /* Move para o canto inferior direito */
+            }
+            75% {
+                transform: translate(-100px, calc(100vh + 100px)); /* Move para o canto inferior esquerdo */
+            }
+            100% {
+                transform: translate(calc(-100px - 100vw), -100px); /* Retorna ao ponto inicial fora da tela */
+            }
+        }
+
+        /* Adiciona espaçamento no final da página */
+        .spacer {
+            height: 200px; /* Ajuste a altura conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Monkey Place</div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/qcFQB8XPrko" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/XfqOB4hvxlY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/spMkaJp975s" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/od_PmtmMDV0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/GlOQnsVOa2o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="tags">
+        <span>#monkey</span>
+        <span>#monkeyrizz</span>
+        <span>#sigma</span>
+        <span>#alfa</span>
+        <span>#chad</span>
+    </div>
+
+    <!-- Usando a nova imagem de banana -->
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 10px; left: 10px;">
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 20%; left: 20%; animation-delay: 2s;">
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 30%; left: 30%; animation-delay: 4s;">
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 40%; left: 40%; animation-delay: 6s;">
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 50%; left: 50%; animation-delay: 8s;">
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 60%; left: 60%; animation-delay: 10s;">
+    <img src="https://images.vexels.com/content/143061/preview/banana-icon-fruit-5662bd.png" alt="Design PNG E SVG De Fruta ícone Da Banana Para Camisetas" class="banana-img" style="top: 70%; left: 70%; animation-delay: 12s;">
+
+    <!-- Espaçamento para garantir rolagem -->
+    <div class="spacer"></div>
+</body>
+</html>
